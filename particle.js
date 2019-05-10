@@ -1,7 +1,7 @@
 const thresh=20**2;
-const k=120;
-const ranF=1.3;
-const windF=0.3;
+const k=12000;
+const ranF=1;
+const windF=1;
 const windDir=[0.70,-0.70];
 class Particle
 {
@@ -46,7 +46,7 @@ class Particle
                 let dist=Math.sqrt(distS);
                 uVec[0]/=dist;
                 uVec[1]/=dist;
-                this.applyCouloumbicForce(dist,uVec);
+                //this.applyCouloumbicForce(dist,uVec);
                 this.applyrandomForce();
                 this.applyWindForce();
             }
